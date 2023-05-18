@@ -2,6 +2,6 @@
 
 This Repository Contains a few projects
 
-on Respinsive Web Design
+on Responsive Web Design
 
 with focus on HTML & CSS.
