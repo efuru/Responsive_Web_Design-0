@@ -1,10 +1,11 @@
 * {
     box-sizing: border-box;
+    font-weight: 800;
   }
   
   body {
     margin: 0;
-    font-family: Roboto, sans-serif;
+    font-family: "Open Sans", sans-serif;
     background: #f5f6f7;
     background-color: #a2a0cb;
   }
@@ -14,9 +15,9 @@
     text-transform: uppercase;
     padding: 32px;
     background-color: #827ebd;
-    color: #d7d4d4;
+    color: #c7c1c1;
     border-bottom: 4px solid #7b77ad;
-    box-shadow: 0 0 2px 2px #7b77ad;
+    box-shadow: 0 0 1px 1px #7b77ad;
     border-radius: 15px;
   }
   
