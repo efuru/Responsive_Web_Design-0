@@ -1,0 +1,13 @@
+# Site settings
+title: Efuru Anthony
+email: efuruanthonytech@yahoo.com
+description: A site to host the products of my code.
+baseurl: /blog
+url:  https://efuru.github.io/Responsive_Web_Design-0/
+
+# Social media links
+github_username: https://github.com/efuru
+
+# Build settings
+markdown: kramdown
+theme: minima
