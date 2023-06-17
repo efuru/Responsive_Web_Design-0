@@ -1,7 +1,7 @@
 # Responsive_Web_Design-0
 
-This Repository Contains a few projects
+This Repository Contains My projects
 
 on Web Development with focus on
 
-HTML & CSS.
+HTML, CSS & SCSS.
