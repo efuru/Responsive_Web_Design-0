@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C Documentation</title>
+    <link rel="stylesheet" href="doc.css" />
+    
+  </head>
+
+  <body>
+<h1>C Documentation</h1>
+    <main id="main-doc">
+         <nav id="navbar">
+        <header id="invisible">Table of Contents</header>
+        
+            <ul id="table-of-contents">
+              <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+              <li><a href="#prerequisite" class="nav-link">prerequisite</a></li>
+              <li><a href="#C_and_C++" class="nav-link">C and C++</a></li>
+              <li><a href="#Hello_World!" class="nav-link">Hello World!</a></li>
+              <li><a href="#Data_Types" class="nav-link">Data Types</a></li>
+              <li><a href="#Variables" class="nav-link">Variables</a></li>
+              <li><a href="#Declaring_Variables" class="nav-link">Declaring Variables</a></li>
+              <li><a href="#Variable_Scope" class="nav-link">Variable Scope</a></li>
+              <li><a href="#Constants" class="nav-link">Constants</a></li>
+              <li><a href="#If_else_Statement" class="nav-link" >If else Statement</a></li>
+              <li><a href="#For_Statement" class="nav-link" >For Statement</a></li>
+              <li><a href="#Function_Prototype"class="nav-link"  >Function Prototype</a></li>
+              <li><a href="#Summary" class="nav-link" >Summary</a></li>
+              </nav>
+      </section>
+      <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>C is a general-purpose programming language that was created in the 1970s by Dennis Ritchie.  Dennis Ritchie created the C programming language as a successor to the B programming language, which was developed by Ken Thompson. At Bell Labs, in 1972 and 1973, Ritchie made C to construct utilities running on Unix.<br><br>
+
+      It was applied to re-implementing the kernel of the Unix operating system which is why C is considered a low-level programming language because it gives direct access to the operating system, it was designed so that when compiled it provides low-level access to memory and language constructs that map efficiently to machine instructions, with minimal runtime.<br><br>
+
+      C is a compiled language, meaning it is first converted to machine code before it is executed.<br><br>
+      
+      C is a language that requires strict adherence to its syntax and structure, and errors can result in unexpected behavior or program crashes.</p>
+      </section>
+
+      <section class="main-section" id="prerequisite">
+        <header>prerequisite</header>
+        <p>This guide assumes you have the following basic background:</p>
+        <ul>
+          <li>A general understanding of Operating Systems and how to interact with the computer.</li>
+          <li>Good Knowledge of Shell and shell commands.</li>
+          <li>Some programming experience, or an “I can” mindset.</li>
+          <li>have a researcher’s attitude.</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="C_and_C++">
+        <header>C and C++</header>
+        <p>
+          C and C++ are both general-purpose programming languages used to write foundational software such as operating systems, browser engines, gaming engines, etc.<br><br>
+
+C++ was built as an extension of C, and C++ can run most C code.<br><br>
+
+Both C and C++ have similar data types and variable declaration.
+        </p>
+        <p id="down" >declaring a variable in C and C++, using the int keyword followed by the variable name:</p>
+      <div>
+        <code>
+          int myVariable;</code>
+          </div>
+        <p>
+          Both languages are compiled languages, which means they are converted to binary code for the machine to read and run it. The compilation process of both C and C++ is similar; They share the same basic syntax and almost all of C’s operators and keywords are also present in C++ and do the same thing. However, C++ has a slightly extended grammar than C, but the basic grammar is the same.<br><br>
+
+          Memory models of both languages are very close to the hardware.<br><br>
+
+          Despite the similarity between C and C++, they are quite different in their own way:<br><br>
+
+          C is a structured programming language that is organized as a collection of functions and data structures with control flow being managed by function calls and conditional statements. However, C++ is an Object-Oriented Programming language that supports concepts such as polymorphism, encapsulation, and inheritance while C does not.<br><br>
+
+          C++ also supports additional data types and features such as classes and objects which allow for more complex data structures, but C does not.
+          </p>
+
+      </section>
+      <section class="main-section" id="Hello_World!">
+        <header>Hello World!</header>
+        <p>
+          Let’s write your first C program!<br><br>
+
+          To write one you need to include a C library in this case &ltstdio.h&gt  which stands for standard input/output and contains functions and macros definitions used in C.<br><br>
+
+void; void is used to indicate that a function does not return a value.<br><br>
+
+         within the function be sure to include a return type; return tells if our program is a success or not. 0 usually stands for success while 1 or -1 means it failed.<br><br>
+
+          don’t worry about these definitions yet, for now just know; to write a C program you need a library and a function defined, and your function must have a return type. 
+        </p>
+        <p id="down">here is your first C program! Yay!</p>
+        <div>
+        <code>
+          #include &ltstdio.h&gt<br><br>
+
+          int main(void){<br><br>
+			    printf("Hello World!");<br><br>
+			    return (0);<br>
+        }
+        </code>
+        </div>
+
+        <p>To run this program:</p>
+        <ul>
+          <li>make sure you saved the file name with a .c extension, e.g. hello.c</li>
+          <li>navigate to the directory where the file is saved.</li>
+          <li>next, compile the file using: gcc hello.c -o hello this will create an executable file named hello</li>
+          <li>run the hello fill like this: ./hello</li>
+        </ul>
+        </p>
+        <p id="down">The output should look like this:</p>
+        <div>
+        <code>Hello World!</code>
+        </div>
+        <p>congratulations! you just wrote your first C program.</p>
+      </section>
+
+      <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <p>In C, Data types specify the type of data that a variable can hold, and the size of memory allocated to store in that data. They also determine the operation that can be performed on the data stored in a variable. we’ll talk more about variables :).</p>
+        <ul>
+        <p>Here are a few C built-in data Types and their size in a 62bit machine:</p>
+        <li>char: 1 byte; is used to store character values (single characters such as letters, digits, and symbols).</li>
+        <li>short: 2 bytes; short is used to store short integer values. It is usually smaller in size than the int data type and can represent a smaller range of values.</li>
+        <li>int: 4 bytes; this is used to store integer values (whole numbers).</li>
+        <li>long: 4 bytes; long is used to store long integer values. It is usually larger in size than the int data type and can represent a larger range of values.</li>
+        <li>long long: 8 bytes; this is used to store long long integer values. It is usually larger in size than the long data type and can represent an even larger range of values.</li>
+        <li>float: 4 bytes; used to store floating-point values (numbers with a decimal point).</li>
+        <li>double: 8 bytes; used to store double-precision floating-point values (numbers with a decimal point and higher precision than float).</li>
+        <li>long double: 12 or 16 bytes; used to store long double-precision floating-point values. It is usually larger in size than the double data type and can represent floating-point values with higher precision.</li>
+        </ul>
+        <p>To determine what size a data type has, we use the sizeof operator.</p>
+        <p id="down">code example:</p>
+        <div>
+        <code>
+          #include &ltstdio.h&gt<br><br>
+
+          int main(void){<br><br>
+		      int x;<br><br>
+	      	printf("size of x: %d bytes\n", sizeof(x));<br><br>
+	      	return 0;<br>
+        }
+        </code>
+        </div>
+        <p>The sizeof operator returns the size of the object or type that is passed as its operand. In this case, the operand is the variable x, so sizeof(x) returns the size of x in bytes.</p>
+      </section>
+
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>
+          A variable is a named location in memory that stores a value of a specific data type. The name of the variable is used to refer to the value stored in that location. The data type of the variable determines the kind of values that can be stored in it and the operations that can be performed on it.<br><br>
+          To name a variable is like naming your first dog! you have to get the name right, here in Nigeria, everyone knows not to call their dog “Bingo” that name is so outdated it’s an offense to the animal dog kingdom, To name a variable here are a few rules to follow:<br><br>
+          a variable name can start with an alphabet (lowercase or uppercase); subsequent characters can also be an underscore _ or/and digits (0-9). <br><br>
+          a variable name can start with an underscore _ this is good practice; subsequent characters can be digits and alphabets.<br><br>
+          a variable name must never begin with a number (0-9).
+a variable name should not contain a hyphen (-).<br><br>
+      
+        <p id="right">Good variable name:</p>
+        <ul>
+          <li class="small" id="code-li" >myVar</li>
+          <li id="code-li">susanAnthill</li>
+          <li id="code-li">numberTwoAnd</li>
+          <li id="code-li">thisAvAriable </li>
+        </ul>
+
+        <p id="right">Bad, very bad variable name:</p>
+        <ul>
+          <li  class="big" id="code-li">space not-allowed</li>
+          <li class="small" id="code-li">j-k</li>
+          <li class="small" id="code-li">j   k</li>
+          <li class="big" id="code-li">nawa_LeaveHyphen</li>
+          </ul>
+
+          <p id="right">:&#41 don’t do this a home.</p>
+          
+      </section>
+
+      <section class="main-section" id="Declaring_Variables">
+        <header>Declaring Variables</header>
+        <p>
+          In C, you must specify the data type of a variable when you declare it. The data type determines the kind of values that the variable can store and the operations that can be performed on it. For example, the declaration int h; specifies that the variable h has the data type int, which means it can store integer values. Yes, int h; declares a variable named h of type int in C. In C, variable names must follow certain rules. They must start with a letter (either uppercase or lowercase) or an underscore (_), and can be followed by any number of letters, digits, or underscores.<br><br>
+          </p>
+          <p id="down">Here’s how:</p>
+        <div id="down1">
+          <code>
+            #include &ltstdio.h&gt<br><br>
+ 
+            int main(void){<br><br>
+		        int i; /*variable declaration*/<br><br>
+		        i = 5; /*variable initialization: assigning value to a variable*/<br><br>
+           }
+          </code>
+        </div>
+      </section>
+<br><br>
+      <section class="main-section" id="Variable_Scope">
+        <header>Variable Scope</header>
+        <p>
+          <strong>Local Variables:</strong><br>
+          Whenever we declare a variable inside a function, it's called the local variable, we can only access it inside the same function with which we declared it.<br><br>
+          </p>
+          <p id="down">example:</p>
+        <div>
+          <code>
+            #include &ltstdio.h&gt<br><br>
+
+            int main(void){<br><br>
+            int i;<br><br>
+            i = 5;<br><br>
+            printf("the value of %d is", i);<br><br>
+            return 0;<br><br>
+        }
+          </code>
+        </div>
+        <p>the variable i is declared within the main function and is only accessible within that function.</p><br><br>
+        <p>
+        <strong>Global Variable:</strong><br>
+      Global variables are variables declared outside the body of a function and can be accessible to any part of the program: many functions within a program can use a global variable.<br><br></p>
+      <p id="down">example:</p>
+
+        <div>
+          <code>
+            #include &ltstdio.h&gt<br><br>
+
+        int j = 7;<br><br>
+
+        int main(void){<br><br>
+        int i;<br><br>
+        i = 5;<br><br>
+        printf("the value of i is %d\n", i);<br><br>
+        printf("the value of j is %d\n", j)<br><br>
+        return (i + j);<br><br>
+        }
+          </code>
+        </div>
+
+        <p id="down">Your output should look like this:</p>
+        <div>
+          <code>
+            the value of i is 5<br><br>
+            the value of j is 7
+          </code>
+        </div>
+        <p>since i is assigned the value 5 and j is assigned the value 7, the expression i + j evaluates to 12. Therefore, when this program is run, it will return an exit status of 12 to the operating system. The exit value of a program is not visible to the command line, It is mainly used by other programs or scripts that may be calling this program to determine whether it completed successfully or not. So don’t worry you’re not supposed to c 12 </p>
+      </section>
+
+      <section class="main-section" id="Constants">
+        <header>Constants</header>
+        <p>In C, a constant is a value that cannot be changed during the execution of the program. 
+
+There are two types of constants in C: literal constants and symbolic constants.</p><br><br>
+         <p>
+          <strong>Literal constant:</strong><br>
+          A literal constant is a value that is written directly into the code. For example, in the statement int x = 5;, the value 5 is a literal constant.<br><br>
+          <br></p>
+          <p id="down">example:</p>
+        <div>
+          <code>
+            #include &ltstdio.h&gt<br><br>
+
+            int main(void){<br><br>
+            int i;<br><br>
+            i = 10;/*the value 10 is literal constant*/<br><br>
+            }
+          </code>
+        </div>
+      
+        <p>
+        <strong>Symbolic constant:</strong><br>
+      A symbolic constant is a name that represents a value which are created using the **`#define`** preprocessor directive.<br><br></p>
+     <p id="down">For example, you could define a symbolic constant for the value of pi like this:</p>
+
+        <div>
+          <code>
+          
+        #define PI 3.14159
+          </code>
+        </div>
+        <p >Once a symbolic constant is defined, it can be used in the code just like a literal constant.</p><br>
+        <p id="down">example:</p>
+        <div>
+          <code>
+          double circumference = 2 * PI * radius;
+          </code>
+        </div>
+        <p id="down">Example for symbolic  constants in C:</p>
+        <div>
+          <code>
+              #include &ltstdio.h&gt<br><br>
+              #define PI 3.22222<br><br>
+              /**<br><br>
+              * a macro name PI is defined with a 3.22222 value<br><br>
+              * main - this program fines the area of a circle and<br><br>
+                its's maximum value<br><br>
+              * const: keyword for constant<br><br>
+              * PI: symbolic constant representing the mathematical constant<br><br>
+              * int: data type<br><br>
+              * MAX_VALUE: maximum value; can not be change<br><br>
+              * x: radius of circle<br><br>
+              */<br><br>
+
+              int main(void){<br><br>
+              const int MAX_VALUE = 100;<br><br>
+              int x = 5;<br><br>
+              
+              double area = PI * x * x;<br><br>
+              printf("the area for the circle is: %f \n", area);<br><br>
+              printf("the maximum value is: %d\n", MAX_VALUE);<br><br>
+              return (0);<br><br>
+            }
+
+          </code>
+        </div>
+        <p>In this code, PI is a symbolic constant defined using the #define preprocessor directive. It represents the value 3.14159. MAX_VALUE is also a symbolic constant, but it is defined using the const keyword. It represents the value 100. The values 5 and 0 are literal constants.<br><br></p>
+        <p id="down">Output:</p>
+        <div>
+          <code>
+            the area for the circle is: 80.555500<br><br>
+            the maximum value is: 100
+          </code>
+        </div>
+      </section>
+
+      <section class="main-section" id="If_else_Statement">
+        <header>If else Statement</header>
+        <p>The If…else is a loop that checks if our “if” condition is true, if it's true our program returns the value in the first statement, and “else” returns the value in the “else” statement.<br><br></p>
+
+<p id="down">if…else statement syntax:</p>
+        <div>
+          <code>
+            if (condition){<br><br>
+
+            statement<br><br>
+
+            }else{<br><br>
+
+            statement<br><br>
+
+            }
+          </code>
+        </div>
+
+        <p id="down">simple code example:</p>
+        <div>
+          <code>
+            #include &ltstdio.h&gt<br><br>
+
+            /**<br><br>
+            * main -this program checks for even numbers in a given variable<br><br>
+            * x: variable given<br><br>
+            * return: 0<br><br>
+            */<br><br>
+            int main(void){<br><br>
+            int x = 7;<br><br>
+
+            if (x % 2 == 0 ){<br><br>
+            
+            printf(" %d is an even number\n", x);  <br><br>
+
+            }else{<br><br>
+
+                printf("%d is not an even number\n", x);<br><br>
+                return (0);<br><br>
+            }<br><br>
+          }
+          </code>
+        </div>
+
+        <p id="down">output:</p>
+        <div>
+          <code>7 is not an even number</code>
+        </div>
+
+      </section>
+
+      <section class="main-section" id="For_Statement">
+        <header>For Statement</header>
+        <p>The for statement allows you to repeat statements a specific number of times until certain conditions are met. it has 3 parts; an initialization expression which is executed once at the start of the statement, a conditional expression which is evaluated before each iteration of the loop;  if true the statement within the loops is executed, and an increment or decrement expression which controls how long the loop will run.<br><br></p>
+        <p id="down">syntax:</p>
+        <div>
+          <code>
+            for (initialization; condition; statement){
+            statements
+            }
+            </code>
+        </div>
+
+        <p id="down">example: </p>
+        <div>
+          <code>
+            #include &ltstdio.h&gt<br><br>
+
+            /**<br><br>
+            * main - this program increments the value 1 until it gets to 5<br><br>
+            * i: index variable<br><br>
+            * return: 0<br><br>
+            */<br><br>
+            int main(void){<br><br>
+              int i = 0;<br><br>
+
+              for (i = 1; i &lt= 5; i++) {<br><br>
+              printf("%d\n", i);<br><br>
+            }
+             return (0);<br><br>
+            }
+          </code>
+        </div>
+
+        <p id="down">output:</p>
+        <div>
+          <code>
+            1 <br><br>
+            2<br><br>
+            3<br><br>
+            4<br><br>
+            5
+          </code>
+        </div>
+      </section>
+
+      <section class="main-section" id="Function_Prototype">
+        <header>Function Prototype</header>
+        <p>A function prototype aka function declaration provides information to the compiler about a function’s name, return type, and parameters. It specifies the interface but does not provide implementation details; this means that the function is only declared, and information provided on how the function is used (its name, return type, and parameters) but it does not specify what the function does.<br><br></p>
+        <p id="down">let’s declare a function:</p>
+        <div>
+          <code>
+            #include &ltstdio.h&gt<br><br>
+
+            /**<br><br>
+            * add - this is the name of our function<br><br>
+            * x, y: these are the parameters passed into our function<br><br>
+            */<br><br>
+
+            int add(int x, int y);<br><br>
+          </code>
+        </div>
+
+        <p>
+          when implementing the function, definitions are provided inside the function. this is where we define and implement our function.<br><br></p>
+
+          <p id="down">now let’s define our function which we just declared:</p>
+        <div>
+          <code>
+            #include &gtstdio.h&lt<br><br>
+
+            /**<br><br>
+            * add - this is the name of our function<br><br>
+            * x, y: these are the parameters passed into our function<br><br>
+            */<br><br>
+
+            int add(int x, int y);{<br><br>
+            return (x + y);<br><br>
+            }<br><br>
+
+            /* defining our function */<br><br>
+            int main(void){<br><br>
+            int x = 100;<br><br>
+            int y = 800;<br><br>
+              
+            int result = add(x, y);/*calling the function declared above*/<br><br>
+            printf("the sum of x and y is %d\n", result);<br><br>
+            return (0);<br><br>
+            }
+          </code>
+        </div>
+
+        <p id="down">Our output should look like this:</p>
+        <div>
+          <code>the sum of x and y is 900 </code><br><br>
+        </div>
+      </section>
+
+      <section class="main-section" id="Summary">
+        <header>Summary</header>
+        <p>C programming language is a wide language, this is just a mild explanation for C, one of the oldest Programming languages in the world. here are a few recommendations for further reading:</p><br>
+        <a></a>
+        <ul>
+          <li><a>“C Programming Absolute Beginner’s Guide” </a>by Greg Perry and Dean Miller </li>
+          <li><a>“C Programming Language” </a>by Brian W. Kernighan and Dennis M. Ritchie </li>
+          <li><a>“C: The Complete Reference” </a>by Herbert Schildt</li>
+          <li><a>“Head First C: A Brain-Friendly Guide” </a>by David Griffiths </li>
+          <li><a>“C Programming: A Modern Approach” </a>by K. N. King</li>
+          <li><a>“Programming in C” </a>by Stephen Kochan</li>
+          </ul>
+      </section>
+      
+    </main>
+
+  </body>
+
+</html>
