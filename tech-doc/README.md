@@ -6,7 +6,7 @@ HTML documentation using a various HTML Elements
 
 CSS @media rules
 
-Deep focus on Responsive we on samll screen and large screen.
+Deep focus on Responsive web design on samll screen and large screen.
 
 this file requirers more improvement and i will update 
 
