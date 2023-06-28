@@ -1,0 +1,116 @@
+/*style 1*/
+
+/*.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 100px auto 100px;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "header  header info"
+    "navv content content"
+    "navv  content content"
+    "footer footer link";
+    font-size: 50px bold;
+    color: whitesmoke;
+
+}
+.header {
+    grid-area:  header;
+    background-color: greenyellow;
+    text-align: center;
+}
+
+.navv {
+    grid-area:  navv;
+    background-color: blue;
+    text-align: center;
+}
+.link {
+    grid-area: link;
+    background-color: brown;
+    text-align: center;
+}
+.content {
+    grid-area: content;
+    background-color: blueviolet;
+    text-align: center;
+}
+.footer {
+    grid-area: footer;
+    background-color: red;
+    text-align: center;
+}
+.info {
+    grid-area: info;
+    background-color: rgb(6, 6, 74);
+    text-align: center;
+}*/
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 40px 400px 40px 40px;
+    grid-gap: 5px;
+    font-size: 30px;
+    font-weight: 100;
+    font-family:cursive;
+    font-style: unset;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration:dashed;
+    color:azure;
+}
+.header {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: greenyellow;
+    text-align: center;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid rgb(124, 174, 26);
+}
+
+.navv {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: blue;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid rgb(9, 9, 107);
+}
+.link {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    background-color: brown;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid rgb(66, 8, 8);
+}
+.content {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    background-color: blueviolet;
+    text-align: center;
+    border-radius: 15px 5px;
+    border: 1px solid rgb(51, 9, 90)
+}
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: red;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid rgb(83, 4, 4);
+}
+.info {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: rgb(6, 6, 74);
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid black;
+}
