@@ -28,7 +28,8 @@
               <li><a href="#For_Statement" class="nav-link" >For Statement</a></li>
               <li><a href="#Function_Prototype"class="nav-link"  >Function Prototype</a></li>
               <li><a href="#Summary" class="nav-link" >Summary</a></li>
-              </nav>
+            </ul>
+          </nav>
     
       <section class="main-section" id="Introduction">
       <header>Introduction</header>
