@@ -1,6 +1,6 @@
 /*style 1*/
-
-/*.container {
+/*
+.container {
     display: grid;
     height: 100vh;
     grid-template-columns: repeat(3, 1fr);
@@ -45,13 +45,15 @@
     grid-area: info;
     background-color: rgb(6, 6, 74);
     text-align: center;
-}*/
-
+}
+*/
 /*body  {
     margin: 0 auto;
     margin-left: 20px;
 }*/
 
+
+/*style 2 comment this out in other to use style 1*/
 .container {
       margin: 0 auto;
     display: grid;
@@ -122,6 +124,7 @@
     border: 1px solid black;
 }
 
+/*the media queries can be used for both style 1 & 2*/
 @media  only screen and (max-width: 550px) {
     .container {
         width: 90%;
