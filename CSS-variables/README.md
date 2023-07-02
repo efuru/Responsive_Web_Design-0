@@ -32,4 +32,4 @@ CSS Properties used:
 * background
 * flex-direction
 
-![Screenshot of Daylight City Skyline](/images/image.png)
+![Screenshot of Daylight City Skyline](/images/day.PNG)
