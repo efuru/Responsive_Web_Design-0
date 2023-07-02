@@ -12,6 +12,9 @@ CSS Variable Configuration
 
 Building a city skyline using CSS Variables**
 
+![Screenshot of Night time City Skyline](/images/night-skyline.PNG)
+
+
 CSS Properties used:
 * :root
 * var()
@@ -29,6 +32,4 @@ CSS Properties used:
 * background
 * flex-direction
 
-![Screenshot of Daylight City Skyline](/images/day.PNG)
-
-![Screenshot of Night time City Skyline](/images/Capture.PNG)
+![Screenshot of Daylight City Skyline](/images/image.png)
