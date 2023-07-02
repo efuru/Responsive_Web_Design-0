@@ -13,18 +13,22 @@ CSS Variable Configuration
 Building a city skyline using CSS Variables**
 
 CSS Properties used:
-:root
-var()
-linear-gradient
-repeating-linear-gradient
-idth: 100%;
-idth: 100%;
-height
-display
-align-items
-justify-content
-position
-top
-overflow
-background
-flex-direction
+* :root
+* var()
+* linear-gradient
+* repeating-linear-gradient
+* idth: 100%;
+* idth: 100%;
+*height
+* display
+* align-items
+* justify-content
+* position
+* top
+* overflow
+* background
+* flex-direction
+
+![Screenshot of Daylight City Skyline](/images/day.PNG)
+
+![Screenshot of Night time City Skyline](/images/Capture.PNG)
