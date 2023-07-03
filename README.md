@@ -1,4 +1,4 @@
-### Responsive_Web_Design-0
+# Responsive_Web_Design-0
 
 This Repository Contains My projects and Notes
 
@@ -56,7 +56,7 @@ Finally,CSS Grid.
 * CSS Transform
 
 
-### Projects
+## Projects
 
 Learn HTML by Building a Cat Photo App, Completed
 
@@ -100,7 +100,7 @@ Personal Portfolio Webpage
 
 (turn all to link to their dir or codepen??, add discription and screenshpot)
 
-## What I Learned
+### What I Learned
 
 a lot! and still building
 
