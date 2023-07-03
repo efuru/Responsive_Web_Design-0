@@ -12,7 +12,7 @@ In this Projects from FreeCodeCamp I learned how to create responsive web design
 
 core languages of web development: HTML for structuring content and CSS for styling. 
 
-I gained a fundamental understanding of HTML and CSS styling.
+I gained a fundamental understanding of HTML elements and CSS styling.
 
 exploring modern CSS techniques, such as CSS variables,
 
@@ -105,8 +105,6 @@ Personal Portfolio Webpage
 a lot! and still building
 
 ### Reference
-[FreeCodeCamp]
-(https://www.freecodecamp.org/learn/2022/responsive-web-design/)
+[FreeCodeCamp](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
 
-[efuru]
-(https://github.com/efuru)
+[efuru](https://github.com/efuru)
