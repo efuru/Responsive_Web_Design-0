@@ -8,18 +8,22 @@ CSS Grid gives you control over the rows and columns of your webpage design.
 
 CSS grid is often paired with Media queries to create super responsive web pages and it is supported in all major web browsers.
 
+This Directory contains my study amd project; Building a Magazine Layout with CSS grid.
+
 grid properties:
-grid-template-columns
-grid-template-rows
-grid-template-areas
-gird-column
-grid-row
-grid-area
-grid-gap
-align-items
-justify-items
-row-gap
-column-gap
-grid-auto-flow
-grid-auto-column
-gap
+* grid-template-columns
+* grid-template-rows
+* grid-template-areas
+* gird-column
+* grid-row
+* grid-area
+* grid-gap
+* align-items
+* justify-items
+* row-gap
+* column-gap
+* grid-auto-flow
+* grid-auto-column
+* gap
+
+Screenshot of Magazine using CSS grid

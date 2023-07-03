@@ -9,6 +9,9 @@ body {
  font-size: 16px;
   padding-left: 20px;
   padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 h1 {
 text-align: center;
