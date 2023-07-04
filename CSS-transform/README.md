@@ -9,7 +9,7 @@ A part of My Collection of projects in Responsive Web Design With FreeCodeCamp.
 
 
 ## Installation and usage instructions:
-* Viewing the project: download the project files, and open index.html file through a web browser or a preview within your text editor.
+* Viewing the project: download the project files, and open transform.html file through a web browser or a preview within your text editor.
 
 * Dependencies: VScode, GitHub,  MS Egde and Google Chrome.
 
@@ -27,7 +27,7 @@ A part of My Collection of projects in Responsive Web Design With FreeCodeCamp.
 * Google Bard
 
 
-##### A waving Prnguin
+##### A waving Penguin
 ![Screenshot of A Penguin](/images/my-penguin.PNG)
 
 ## Contributing:
