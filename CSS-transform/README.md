@@ -1,9 +1,44 @@
-Transform can be used to change an element's shape, position, and orientation in a web page.
+![Screenshot of A Penguin](/images/my-pen-guin.PNG)
 
-properties of CSS:
-* Transform
-* skew()
-* border-top-left-radius
-* border-top-right-radius
-* border-bottom-left-radius
-* border-bottom-right-radius
+# CSS Transform
+CSS Transform can be used to change an element's shape, position, and orientation in a web page.
+
+This Directory contains my project: A Waving Penguin; built using the CSS transform properties.
+
+A part of My Collection of projects in Responsive Web Design With FreeCodeCamp.
+
+
+## Installation and usage instructions:
+* Viewing the project: download the project files, and open index.html file through a web browser or a preview within your text editor.
+
+* Dependencies: VScode, GitHub,  MS Egde and Google Chrome.
+
+* files; CSS Styles: transform.css 
+* files; HTML: trnasform.html
+  
+
+## Tools:
+* VScode
+* Github
+* FreeCodeCamp
+* HTML5
+* CSS3
+* MS Bing
+* Google Bard
+
+
+##### A waving Prnguin
+![Screenshot of A Penguin](/images/my-penguin.PNG)
+
+## Contributing:
+If you’re open to contribute to this project, Adding suggestion or guildlines:
+ You're Welcome To.
+
+
+### Reference
+[FreeCodeCamp](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
+
+[efuru](https://github.com/efuru)
+
+##### Bye Bye, from I and our Penguin Friend
+![Screenshot of A Penguin](/images/my-penguin.PNG)
