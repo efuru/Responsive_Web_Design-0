@@ -14,7 +14,7 @@ A part of My Collection of projects in Responsive Web Design With FreeCodeCamp.
 * Dependencies: VScode, GitHub,  MS Egde and Google Chrome.
 
 * files; CSS Styles: transform.css 
-* files; HTML: trnasform.html
+* files; HTML: transform.html
   
 
 ## Tools:
@@ -32,7 +32,7 @@ A part of My Collection of projects in Responsive Web Design With FreeCodeCamp.
 
 ## Contributing:
 If you’re open to contribute to this project, Adding suggestion or guildlines:
- You're Welcome To.
+ You're Welcome To Do So.
 
 
 ### Reference
