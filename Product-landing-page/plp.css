@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Lilita+One&family=Outfit:wght@300&family=Russo+One&family=Teko:wght@500;600&display=swap');
+
+:root {
+    --background-color: rgb(245, 248, 247);
+     --background-color1: #ffffff;
+  
+     --text-color2: rgb(255, 255, 255);
+     --text-color3: #9da8fc;
+     --text-color4: #f4deff;
+
+  
+     --header-color: #011706; /*green*/
+     --header-color0: rgb(4, 4, 31); /*blue*/
+     --header-color1: #17022b; /*purple*/
+  
+     --product-color: rgb(3, 6, 129);
+     --product-color2: rgb(235, 230, 230);
+     --product-color3:  rgba(7, 11, 100, 0.957);
+     --product-color4:  rgba(3, 5, 46, 0.957);
+     --product-color5: #00008B;
+     --rr-color: #e7e7e7;
+     --product-color6: #e7e7e7;
+
+
+     --deco-color1: rgb(243, 224, 10);
+     --deco-color2: #d7c013;
+     --deco-color3: #5050bb;
+  }
+  
+  body {
+    background-color: var( --background-color);
+    color: black;
+    width: 100%;
+  }
+
+
+  section {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%
+  }
+  
+
+  /*styles for header*/
+   #header {
+    width: 100%;
+    height: 60px;
+    background-color: var(--header-color0);
+    display: flex;
+    top: 0;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 4;
+  }
+  
+  #header-img {
+    background-color: var(--text-color2);
+    width: max(25px, 18vw);
+    height: 15px;
+    padding: 0.4rem;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    box-shadow: inset var(--header-color0) 10px;
+  }
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: small;
+  letter-spacing: 1.5px;
+
+}
+li > a {
+  text-decoration: none;
+  color: var(--header-color0);
+}
+
+ 
+nav > ul > li {
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+
+nav > ul > li:hover {
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  cursor: pointer;
+}
+
+ul > li > a {
+  width: 50%;
+  height: 25px;
+  background-color: var(--background-color1);
+  border-radius: 15px;
+  border: #ffffff 5px solid;
+}
+
+
+/*styles for call to action*/
+  .cta {
+    position: relative;
+    top: 60px;
+    align-items: center;
+  }
+  h1{ 
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    font-size: 150px;
+    color: var(--product-color3);
+  }
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 2px;
+  justify-content: space-between;
+  margin: 0 quto;
+}
+
+label {
+display: none;
+}
+
+#email {
+  position: absolute;
+  top: -120px;
+  left: 35px;
+  background-color: var(--deco-color1);
+  border: none;
+  color: var(--header-color0);
+  height: 30px;
+  width: 140px;
+  border-radius: 5px;
+  box-shadow: 0.2px 0.5px 3px var(--product-color3);
+  text-align: center;
+}
+
+#submit {
+  position: absolute;
+  top: -120px;
+  right: 35px;
+  background-color: var(--deco-color1);
+  border: none;
+  color: var(--header-color0);
+  font-family: FLEX;
+  height: 30px;
+  width: 80px;
+  border-radius: 5px;
+  box-shadow: 0.2px 0.5px 3px var(--product-color3);
+}
+ 
+ /*styles for features*/
+ #Features {
+    margin-top: 80px;
+ }
+
+.fa {
+  font-size: 50px;
+  font-weight: bold;
+  margin-right: 20px;
+  color: var(--deco-color3);
+  }
+  /*
+.fa.fa-diamond{
+  font-size: 80px;
+}
+.fa.fa-check {
+  font-size: 80px;
+}
+.fa.fa-truck {
+  font-size: 80px;
+}*//*and all you needed to do was target this or increase their sizes via html*/
+
+.p1 {
+  display: block;
+  width: 100%;
+  margin-left: 165px;
+  font-size: 14px;
+  font-family: Palatino, sans-serif;
+  margin-top: -0.5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+span {
+  font-family: 'Lilita One', sans-serif;
+  font-size: 25px;
+  color: var(--product-color);
+   margin-left: 80px;
+   -webkit-text-stroke: 1px var( --deco-color3);
+}
+
+i {
+  position: relative;
+  top: 20px;
+}
+
+.l1 {
+ list-style-type: none;
+}
+
+
+/*styles for How-It-Works*/
+#How-It-Works {
+  display: flex;
+  justify-content: center;
+}
+#video {
+  width: 650px;
+  height: 350px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+/* product list styles*/
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+#products li {
+  border: 1px solid var(--deco-color2);
+  width: calc(32% - 2px); /*Subtract 2px for the border*/
+  list-style-type: none;
+  height: 250px;
+  padding-bottom: 10px;
+}
+h3 {
+  width: 100%;
+  height: 16%;
+  background-color: var(--product-color6);
+  margin-top: 0;
+  padding-top: 6px;
+  text-align: center;
+  font-family: Teko, sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.3px;
+}
+.bold {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 17px;
+}
+#products p {
+  text-align: center;
+}
+#products button {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--product-color5);
+  color: var(--text-color2);
+  width: 40%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+footer {
+  width: 650px;
+  height: 100px;
+  background-color: var(--product-color6);
+  display: flex;
+  flex-direction: column;
+
+}
+footer div{
+  display: flex;
+  margin: 0 5px;
+  justify-content:space-between;
+}
+footer div h5 {
+  margin: 0 10px;
+  padding-top: 20px;
+}
+
+footer p {
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #products li {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
