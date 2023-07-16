@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Lilita+One&family=Luckiest+Guy&family=Outfit:wght@300&family=Russo+One&family=Teko:wght@500;600&family=VT323&display=swap');
+
+:root {
+  --base-color: #fff;
+
+  --background-color: #16161a;
+  --backstrocks-color0: #72757e;
+  --text-color1: #94a1b2;
+  --text-botton: #fffffe;
+  --text-color2: #fffffe;
+
+  --deco-color: #7f5af0;
+   --deco-color0: #7f5af0;
+    --deco-color1:  #2cb67d;
+    --deco-color2: #010101;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--background-color);
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom:  2px solid var(--deco-color);
+  background-color: var(--background-color);
+  z-index: 4;
+}
+
+.nav-link {
+  display: flex; 
+  list-style-type: none;
+
+}
+
+.nav-link a {
+  text-decoration: none;
+  padding: 0 20px;
+  color: var(--text-color2);
+  font-size: 13px;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+}
+
+#welcome-section h1 {
+  margin-top: 50vh;
+  font-size: 70px;
+  text-align: center;
+  color: var( --text-botton);
+  font-family: 'Luckiest Guy';
+  letter-spacing: 10px;
+}
+
+#welcome-section p {
+  font-size: 30px;
+  text-align: center;
+  color: var(--deco-color1);
+  margin-bottom: 40vh;
+  font-family: VT323;
+ 
+}
+
+#projects {
+  background-color: #010101;
+  padding-top: 20vh;
+  border-top: 2px solid var(--deco-color);
+  padding-bottom: 20vh;
+  border-bottom: 2px solid var(--deco-color);
+}
+
+#project-title-cap {
+  font-size: 30px;
+  color: var( --text-botton);
+  text-align: center;
+  font-family: 'Times New Roman', sans serif;
+  margin-bottom: 0;
+}
+.project-tile #uderline  {
+  width: 600px;
+  height: 2px;
+  background-color: var(--deco-color);
+  align-items: center;
+  margin-bottom: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+img {
+  width: 300px;
+  height: 350;
+  border: 1px solid var(--deco-color);
+  border-radius: 10px;
+  margin-bottom: 1vh;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1.5fr));
+  align-items: center;
+  margin: auto;
+  justify-items: center;
+  grid-row-gap: 2rem;
+  grid-column-gap: 0.5rem;
+}
+
+ #projects .projects a{
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+#projects .projects a p span {
+  font-family: Futura;
+  font-size: 13px;
+  color: var( --text-color2);
+}
+
+/*#contacts {
+  background-color: #fffffe;
+}*/
+#contacts h1 {
+  font-size: 50px;
+  font-family: VT323;
+  text-align: center;
+  font-weight: light;
+  padding-top: 50vh;
+  color: var(--text-color2);
+}
+#contacts p {
+ font-size: 15px;
+ font-family: 'Times New Roman', sans serif;
+ text-align: center;
+ font-weight: light;
+ color: var(--text-color2);
+ padding-bottom: 3vh; 
+ letter-spacing: 3px;
+ padding-top: 3vh;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social a {
+  text-decoration: none;
+  padding: 0 25px;
+  color: var(--text-color2);
+  font-size: 15px;
+  padding-bottom: 30vh;
+  text-align: center;
+}
+.social #profile-link a {
+  align-items: center;
+}
+.fa {
+  font-size: 25px;
+}
+@media only screen and (max-width: 900px) {
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    }
+}
