@@ -22,7 +22,7 @@ CSS Properties used:
 * repeating-linear-gradient
 * idth: 100%;
 * idth: 100%;
-*height
+* height
 * display
 * align-items
 * justify-content

@@ -58,9 +58,9 @@ Finally,CSS Grid.
 
 ## Projects
 
-Learn HTML by Building a Cat Photo App, Completed
+Learn HTML by Building a Cat Photo App
 
-Learn Basic CSS by Building a Cafe Menu, Completed
+Learn Basic CSS by Building a Cafe Menu
 
 Learn CSS Colors by Building a Set of Colored Markers
 
@@ -98,10 +98,17 @@ CSS Transforms, Building a Penguin
 
 Personal Portfolio Webpage
 
-(turn all to link to their dir or codepen??, add discription and screenshpot)
+
+## Tools
+* FreeCodeCamp
+* GitHub
+* VScode
+* Git
+* HTML5
+* CSS3
+* SCSS
 
 ### What I Learned
-
 a lot! and still building
 
 ### Reference
