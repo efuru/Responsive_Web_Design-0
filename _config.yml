@@ -11,3 +11,4 @@ github_username: https://github.com/efuru
 # Build settings
 markdown: kramdown
 theme: minima
+sass_dir: assets/css
